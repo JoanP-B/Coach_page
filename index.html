@@ -13,13 +13,23 @@
     <header class="main-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
+
+                <!---Menu responsive-->
+                <button class="navbar-toggler collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!---Titulo-->
                 <a href="#" class="navbar-brand">
                     <h4 class="mb-0">COACH <span class="text-primary">PERSONAL</span> <i class="fa-solid fa-dumbbell"></i></h4>
                 </a>
 
                 <!---Menu-->
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
-                
+
                     <ul class="navbar-nav mx-auto">
                         <li>
                             <a href="#home" class="nav-link">Sobre mi</a>
@@ -38,13 +48,6 @@
                     <a class="colored-btn" href="#contacto"><img src="assets/images/colombia.png" style="height: 20px;"> CONTACTAME AQUI</a>
                 </div>
 
-                <!---Menu responsive-->
-                <button class="navbar-toggler collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-                </button>
             </div>
         </nav>
     </header>
@@ -55,47 +58,52 @@
     <main>
         
         <section id="home" class="home-section bg-gray">
-            <div class="carousel-container">
-                <!-- Carrusel -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/images/C1.jpg" class="d-block w-100" alt="Imagen 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/C2.jpg" class="d-block w-100" alt="Imagen 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/C3.jpg" class="d-block w-100" alt="Imagen 3">
-                        </div>
-                    </div>
+            <div class="container">
+                <!---Animacion Opcional-->
+                <div class="anim-elements">
+                    <div class="anim-element"><i class="fa-solid fa-hand-fist" style="color: red"></i></div>
+                    <div class="anim-element"><i class="fa-solid fa-chart-line" style="color: green"></i></div>
+                    <div class="anim-element"><i class="fa-solid fa-money-check-dollar" style="color: yellow"></i></div>
+                    <div class="anim-element"><i class="fa-solid fa-book" style="color: mediumpurple"></i></div>
+                    <div class="anim-element"><i class="fa-solid fa-brain" style="color: palevioletred"></i></div>
                 </div>
-            </div>
-        
-            <!-- Contenedor de texto -->
-            <div class="container-2">
                 <div class="row gy-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="home-intro text-start">
+                        <div class="home-intro text-center text-lg-start">
                             <h6>Hola, mi nombre es ...</h6>
-                            <h1>Soy coach de <span>...</span></h1>
+                            <h1>Coach <span id="type-it"></span></h1>
                             <p>Soy de Medellín, Colombia</p>
                             <a href="#about" class="colored-btn mt-1">
                                 Sobre mí
                             </a>
                         </div>
                     </div>
+                    <!--Imagen Opcional---
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <div class="home-image text-center">
+                            <img src="assets/images/C1.jpg" alt="">
+                        </div>
+                    </div>-->
                 </div>
             </div>
         </section>          
 
     </main>
 
+    <!---Librerias JS-->
+
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+
+    <script src="assets/vendor/typed/typed.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
 
     <!---Font Awesome-->
     <script src="https://kit.fontawesome.com/3d2403dea3.js" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
