@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #373737;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #110dfd
+}
+
+/*header*/
+
+
+.text-primary {
+    color: var(--primary-color) !important; 
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.main-header {
+    background-color: white; /* Cambia el color según el diseño */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    transition: 0.3s background;
+}
+
+
+.main-header .navbar {
+    padding: 15px 0;
+}
+
+.main-header .navbar-nav > li {
+    padding: 0 10px;
+}
+
+.main-header .navbar-nav > li > .nav-link {
+    padding: 0 5px;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--dark-color);
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.main-header .navbar-nav > li > .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: ease all 0.3s;
+}
+
+.main-header .navbar-nav > li > .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.main-header .navbar-nav > li > .nav-link:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .main-header .navbar-collapse {
+        border-bottom: 2px solid var(--dark-color);
+        border-top: 2px solid var(--dark-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+    }
+
+    .main-header .navbar-nav > li + li {
+        border-top: 1px solid rgba(55,55,55,0.1);
+    }
+
+    .main-header .navbar-nav > li > .nav-link {
+        line-height: 50px;
+    }
+
+    .main-header .navbar-nav > li > .nav-link::after {
+        display: none;
+    }
+
+    .main-header .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 4px 9px;
+        outline: none;
+        box-shadow: none;
+    }
+
+    /*Por si se usa span como menu 
+    */
+
+    .main-header .navbar-toggler span {
+        width: 25px;
+        height: 2px;
+        background: var(--dark-color);
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+}
+
+.colored-btn {
+    padding: 8px 20px;
+    border: 2px solid var(--primary-color);
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: uppercase;
+    transition: ease all 0.3s;
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 6px 6px 0 -1px var(--dark-color);   
+}
+
+.colored-btn:hover {
+    color:#fff;
+    background: var(--dark-color);
+    border-color: var(--dark-color);
+    box-shadow: 5px 5px 0 -2px var(--primary-color);
+}
+
+/*Main*/
+
+/*Fondo del main
+.bg-gray {
+    background-color: rgba(158, 108, 108, 0.1);
+}
+*/
+
+.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    padding-top: 70px; /* Ajusta según la altura del header */
+}
+
+.home-section {
+    position: relative;
+    height: 90vh; /* Altura del 90% del viewport */
+    overflow: hidden;
+    padding: 0;
+}
+
+.carousel-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97%; /* Ancho limitado al 90% */
+    height: 100%;
+    z-index: 0; /* Detrás del texto */
+}
+
+.carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px; /* Opcional */
+}
+
+.container-2 {
+    position: relative;
+    z-index: 1; /* Texto encima del fondo */
+    height: 100%;
+    display: flex;
+    align-items: flex-start; /* Texto hacia la parte superior */
+    padding-top: 15%; /* Bajar texto */
+    padding-left: 10%; /* Separar texto del borde izquierdo */
+}
+
+.home-intro {
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Contraste legible */
+    min-width: 600px; /* Limitar el ancho del bloque de texto */
+}
+
+.home-intro h6 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.home-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.home-intro h1 span {
+    border-bottom: 2px solid #FEC448; /* Destacar texto dinámico */
+}
+
+.home-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .home-section {
+        padding-bottom: 70px;
+    }
+}
+
+.home-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.home-section .home-intro h6 {
+    font-weight: 600;
+    color: var(--dark-color);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 0 30px;
+}
+
+@media (max-width: 767px) {
+    .home-section .home-intro h6 {
+        margin: 0 0 20px;
+    }
+}
+
+.home-section .home-intro h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 0 0 35px;
+    line-height: 1;
+}
+
+@media (max-width: 1200px) {
+    .home-section .home-intro h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-section .home-intro h1 {
+        margin: 0 0 25px;
+        font-size: 45px;
+    }
+}
+
+.home-section .home-intro h1 span {
+    border-bottom: 2px solid #FEC448;
+}
+
+.home-section .home-intro p {
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .home-section .home-intro p {
+        font-size: 18px;
+    }
+}
+
