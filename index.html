@@ -13,7 +13,7 @@
 <body>
     <!--HEADER-->
     <header class="main-header">
-        <nav class="navbar header-nav navbar-expand-lg">
+        <nav class="navbar header-nav navbar-expand-lg bg-gray">
             <div class="container">
                 <!---Menu responsive-->
                 <button class="navbar-toggler collapsed" type="button"
@@ -59,7 +59,7 @@
 
     <main>
         <!--Home seccion--->
-        <section id="home" class="home-section bg-gray" data-scroll-index="0">
+        <section id="home" class="home-section"data-scroll-index="0">
 
             <div class="container">
                 <!---Animacion Opcional-->
@@ -73,19 +73,20 @@
                 <div class="row gy-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="home-intro text-center text-lg-start">
-                            <h6>Hola, mi nombre es ...</h6>
+                            <h6>Hola, nosotros somos ...</h6>
                             <h1>Coaching <span id="type-it"></span></h1>
-                            <p>Soy de Medellín, Colombia</p>
+                            <p>Somos de Medellín, Colombia</p>
                             <a href="#about" class="colored-btn mt-1" data-scroll-nav="1">
-                                Sobre mí
+                                Sobre nosotros
                             </a>
                         </div>
                     </div>
+                    <!--Imagen Opcional---
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <div class="home-image text-center">
                             <img src="assets/images/C1.jpg" alt="" loading="lazy">
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>     
@@ -130,7 +131,7 @@
         background-size: cover;" data-scroll-index="2">
             <div class="container">
                 <div class="section-heading">
-                    <h3>My Services</h3>
+                    <h3>Nuestros Servicios</h3>
                 </div>
                 <div class="row gy-4">
                     <div class="col-md-6 col-12">
@@ -188,7 +189,7 @@
                     <div class="col-lg-6">
                         <div class="section-heading text-start">
                             <h3>
-                                Mis Habilidades
+                                Habilidades
                             </h3>
                         </div>
                         <div class="skill-box">
@@ -398,7 +399,7 @@
         </section>
 
         <!---Contact Seccion---->
-        <section id="contact" class="section bg-dark" data-scroll-index="5">
+        <section id="contact" class="section-contact bg-dark" data-scroll-index="5">
             <div class="container">
                 <div class="row gy-5">
                     <div class="col-lg-6">
@@ -412,9 +413,17 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label class="form-label">
-                                                Name
+                                                Nombre
                                             </label>
                                             <input type="text" class="form-control" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="form-label">
+                                                Teléfono
+                                            </label>
+                                            <input type="tel" class="form-control" name="phone" pattern="^\+?[0-9\s\-\(\)]*$" title="Introduce un número de teléfono válido">
                                         </div>
                                     </div>
                                     <div class="col-12">
