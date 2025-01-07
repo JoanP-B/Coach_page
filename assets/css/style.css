@@ -223,7 +223,8 @@ main {
 .home-section {
     position: relative;
     overflow: hidden;
-    background: url('/assets/images/fondo.jpg') no-repeat center center;
+    background: url('/assets/images/C1.jpg') center center;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     padding-top: 150px;
@@ -293,6 +294,7 @@ main {
     }
 }
 
+/*
 .home-image img {
     height: 450px;
     width: 450px;
@@ -309,8 +311,8 @@ main {
         width: 250px;
     }
 }
-
-/*Animacion Opcional*/
+*/
+/*Animacion Opcional
 
 .anim-elements {
     position: absolute;
@@ -418,7 +420,7 @@ main {
         transform: translate(-1px,0) rotate(180deg);
     }
 }
-
+*/
 /*Sobre mi*/
 
 .section {
