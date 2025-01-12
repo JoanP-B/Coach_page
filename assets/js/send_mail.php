@@ -4,9 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Ruta a las clases de PHPMailer desde el directorio actual
-require '../vendor/phpMailer/Exception.php';  // Asegúrate de que esta ruta sea correcta
-require '../vendor/phpMailer/PHPMailer.php';    // Asegúrate de que esta ruta sea correcta
-require '../vendor/phpMailer/SMTP.php';         // Asegúrate de que esta ruta sea correcta
+require '../vendor/phpMailer/Exception.php';  
+require '../vendor/phpMailer/PHPMailer.php'; 
+require '../vendor/phpMailer/SMTP.php';        
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recoger los datos del formulario
