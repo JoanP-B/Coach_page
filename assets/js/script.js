@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     //typed animacion
     new Typed('#type-it', {
-        strings: ['Personal','Empresarial','Educativo','Ejecutivo'],
+        strings: ['Ejecutivo', 'Personal (Life Coaching)', 'de Carrera', 'para Equipos', 'de Liderazgo', 'de Ventas y Marketing', 'para Emprendedores', 'en Toma de Decisiones', 'de Transformación y Cambio', 'de Salud y Bienestar', 'para la Gestión del cambio', 'Financiero'],
         typeSpeed: 200,
         loop: true
     });
