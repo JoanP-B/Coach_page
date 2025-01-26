@@ -25,7 +25,7 @@
 
                 <!---Titulo-->
                 <a href="#" class="navbar-brand">
-                    <img src="assets/images/logo.jpg" style="height: 65px;" width="200px"> </h4>
+                    <img src="assets/images/logo_nf.png" class="logo">
                 </a>
                 <!---Menu-->
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
@@ -55,8 +55,7 @@
             </div>
         </nav>
     </header>
-
-
+    
     <!---MAIN-->
 
     <main>
@@ -95,15 +94,16 @@
         
         <!---About seccion---->
         
-        <section id="about" class="section" data-scroll-index="1">
-            <div class="container">
+        <section id="about" class="section-about custom-container" data-scroll-index="1">
+            <div class="container custom-container">
+                <!-- Primera fila -->
                 <div class="row gy-5 pb-5 align-items-center">
                     <!-- Imagen -->
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 text-center image">
                         <img src="assets/images/C1.jpg" alt="Imagen representativa del coach personal" loading="lazy">
                     </div>
                     <!-- Texto -->
-                    <div class="col-lg-6 ps-lg-5">
+                    <div class="col-lg-6 ps-lg-5 p-5">
                         <div class="about-text">
                             <h3 class="h1 mb-3 text-dark fw-semibold">
                                 Coaching Profesional con +9 años de experiencia
@@ -114,56 +114,36 @@
                             <p>
                                 Además, estoy certificado como Agile Coach y Scrum Master, lo que me ha permitido aplicar metodologías ágiles en organizaciones, optimizando procesos y fomentando una cultura de colaboración, innovación y mejora continua.
                             </p>
-
-                            <!-- CLIENTES SATISFECHOS Y PROYECTOS COMPLETADOS (AGREGARLO DESPUES)
-
-                            <div class="row pt-2">
-                                <div class="col-6 col-md-4">
-                                    <h5 class="text-primary fw-semibold fs-4 mb-0">250+</h5>
-                                    <span class="text-dark">Proyectos Completados</span>
-                                </div>
-                                <div class="col-6 col-md-4">
-                                    <h5 class="text-primary fw-semibold fs-4 mb-0">200+</h5>
-                                    <span class="text-dark">Clientes Satisfechos</span>
-                                </div>
-                            </div>
-                            -->
                         </div>
                     </div>
                 </div>
-         
-                <div class="row gy-5 align-items-center">
-                    <!-- Imagen -->
-                    <div class="col-lg-6 text-center">
-                        <img src="assets/images/C1.jpg" alt="Imagen representativa del coach personal" loading="lazy">
-                    </div>
-                    <!-- Texto -->
-                    <div class="col-lg-6 ps-lg-5">
-                        <div class="about-text">
-                            <h3 class="h1 mb-3 text-dark fw-semibold">
-                                Estudios y Certificados
-                            </h3>
-                            <p>
-                                Profesional en Administración Financiera con más de 9 años de experiencia en estudios de crédito bancario, especializado en la evaluación de riesgos, análisis financiero y optimización de recursos empresariales. Poseo una visión estratégica integral de los procesos bancarios y corporativos, lo que me permite diseñar soluciones efectivas y sostenibles para la toma de decisiones.
-                            </p>
-                            <p>
-                                Además, mi formación en coaching y metodologías ágiles, como Agile Coach y Scrum Master, me ha permitido impulsar el desarrollo de individuos y equipos, fomentando una cultura de mejora continua, colaboración e innovación. Mi enfoque combina habilidades analíticas, liderazgo y gestión financiera para generar un impacto positivo y contribuir al crecimiento sostenible de las organizaciones en entornos dinámicos y de alta complejidad.
-                            </p>
-                            <!--<div class="row pt-2">
-                                <div class="col-6 col-md-4">
-                                    <h5 class="text-primary fw-semibold fs-4 mb-0">250+</h5>
-                                    <span class="text-dark">Proyectos Completados</span>
+                <!-- Segunda fila con fondo completo -->
+                <div class="full-width-background bg-dark">
+                    <div class="container custom-container">
+                        <div class="row gy-5 align-items-center">
+                            <!-- Imagen -->
+                            <div class="col-lg-6 text-center image">
+                                <img src="assets/images/C1.jpg" alt="Imagen representativa del coach personal" loading="lazy">
+                            </div>
+                            <!-- Texto -->
+                            <div class="col-lg-6 ps-lg-6 p-5">
+                                <div class="about-text">
+                                    <h3 class="h1 mb-3 fw-semibold section-heading">
+                                        <i class="fas fa-certificate"></i> Estudios y Certificados
+                                    </h3>
+                                    <p>
+                                        Profesional en Administración Financiera con más de 9 años de experiencia en estudios de crédito bancario, especializado en la evaluación de riesgos, análisis financiero y optimización de recursos empresariales. Poseo una visión estratégica integral de los procesos bancarios y corporativos, lo que me permite diseñar soluciones efectivas y sostenibles para la toma de decisiones.
+                                    </p>
+                                    <p>
+                                        Además, mi formación en coaching y metodologías ágiles, como Agile Coach y Scrum Master, me ha permitido impulsar el desarrollo de individuos y equipos, fomentando una cultura de mejora continua, colaboración e innovación. Mi enfoque combina habilidades analíticas, liderazgo y gestión financiera para generar un impacto positivo y contribuir al crecimiento sostenible de las organizaciones en entornos dinámicos y de alta complejidad.
+                                    </p>
                                 </div>
-                                <div class="col-6 col-md-4">
-                                    <h5 class="text-primary fw-semibold fs-4 mb-0">200+</h5>
-                                    <span class="text-dark">Clientes Satisfechos</span>
-                                </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
         
         <!--Services--->
         <section id="services" class="section bg-gray" 
@@ -173,151 +153,58 @@
                 <div class="section-heading">
                     <h3>Nuestros Servicios</h3>
                 </div>
-                <div class="row gy-4">
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-1">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
+                <div class="timeline">
+                    <div class="timeline-row">
+                        <div class="timeline-content">
+                            <div class="feature-box bg-1">
+                                <div class="icon">
+                                    <i class="fa-solid fa-building-user"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Coaching Ejecutivo</h5>
+                                    <p>Ayuda a líderes y ejecutivos a desarrollar habilidades de liderazgo...</p>
+                                </div>
                             </div>
-                            <div class="content">
-                                <h5>Coaching Ejecutivo</h5>
-                                <p>Ayuda a líderes y ejecutivos a desarrollar habilidades de liderazgo, mejorar la toma de decisiones, gestionar equipos de manera eficaz y maximizar su rendimiento en el entorno corporativo.</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="timeline-content">
+                            <div class="feature-box bg-2">
+                                <div class="icon">
+                                    <i class="fa-solid fa-building-user"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Coaching Personal</h5>
+                                    <p>Apoya a los individuos en el desarrollo personal...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-2">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
+                    <div class="timeline-row">
+                        <div class="timeline-content">
+                            <div class="feature-box bg-3">
+                                <div class="icon">
+                                    <i class="fa-solid fa-building-user"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Coaching de Carrera</h5>
+                                    <p>Acompaña a las personas en la gestión de su trayectoria profesional...</p>
+                                </div>
                             </div>
-                            <div class="content">
-                                <h5>Coaching Personal</h5>
-                                <p>Apoya a los individuos en el desarrollo personal, incluyendo la gestión del tiempo, el establecimiento de metas, la mejora de la autoestima y la superación de obstáculos emocionales.</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="timeline-content">
+                            <div class="feature-box bg-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-building-user"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Coaching para Equipos</h5>
+                                    <p>Facilita la comunicación y colaboración entre los miembros de un equipo...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-3">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching de Carrera</h5>
-                                <p>Acompaña a las personas en la gestión de su trayectoria profesional, ya sea en la transición a un nuevo puesto, el cambio de carrera o el diseño de un plan de crecimiento profesional.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-4">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching para Equipos</h5>
-                                <p>Facilita la comunicación y colaboración entre los miembros de un equipo, ayudando a mejorar el rendimiento colectivo, la cohesión y la resolución de conflictos.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-5">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching de Liderazgo</h5>
-                                <p>Focalizado en el desarrollo de habilidades específicas para liderar equipos, gestionar conflictos, motivar empleados y fomentar una cultura organizacional positiva.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-6">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching de Ventas y Marketing</h5>
-                                <p>Ayuda a equipos comerciales y de marketing a mejorar sus estrategias, habilidades de ventas, manejo de objeciones y liderazgo de equipos de ventas.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-1">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching para Emprendedores</h5>
-                                <p>Ofrece apoyo a empresarios y emprendedores en la creación y gestión de nuevos negocios, desde la concepción de ideas hasta la ejecución y crecimiento empresarial.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-2">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching en Toma de Decisiones</h5>
-                                <p>Ayuda a las personas a tomar decisiones clave, identificando objetivos, analizando riesgos y eligiendo el camino más adecuado para sus intereses y valores.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-3">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching de Transformación y Cambio</h5>
-                                <p>Asiste a las personas en momentos de transición significativa, como cambios de vida, procesos de adaptación a nuevas circunstancias o superación de crisis personales.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-4">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Workshops y Talleres de Coaching</h5>
-                                <p>Organiza sesiones grupales enfocadas en el desarrollo de habilidades específicas, como comunicación efectiva, manejo del estrés, inteligencia emocional o liderazgo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-5">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching de Salud y Bienestar</h5>
-                                <p>Acompaña a las personas en la mejora de su salud física y mental, promoviendo hábitos de vida saludables, la gestión del estrés y el equilibrio entre la vida personal y profesional.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-6">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching para la Gestión del Cambio</h5>
-                                <p>Ayuda a individuos y organizaciones a adaptarse a nuevos entornos, tecnologías o culturas laborales, facilitando el proceso de adaptación.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="feature-box bg-1">
-                            <div class="icon">
-                                <i class="fa-solid fa-building-user"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Coaching Financiero</h5>
-                                <p>Ayuda a las personas a gestionar sus finanzas personales o empresariales, mejorando sus hábitos financieros, creando planes de ahorro o inversión.</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                    <!-- Agrega más filas de contenido y flechas según sea necesario -->
                 </div>                
             </div>
         </section>

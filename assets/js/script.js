@@ -1,5 +1,22 @@
 //menu
 
+
+
+//linea de tiempo
+
+$(window).on('scroll', function() {
+    console.log("Scroll detectado");
+    var skillsSection = $('#skills');
+    var skillsPosition = skillsSection.offset().top;
+    var windowHeight = $(window).height();
+    var scrollPosition = $(window).scrollTop();
+
+    if (scrollPosition + windowHeight > skillsPosition) {
+        $('#skills .timeline').addClass('visible');
+    }
+});
+
+
 //scroll
 
 $(window).on("scroll", function() {

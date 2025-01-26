@@ -56,7 +56,7 @@ a:hover {
     transition: 0.3s background;
 }
 .main-header .navbar {
-    padding: 15px 0;
+    padding: 0px;
 }
 
 .main-header .navbar-nav > li {
@@ -96,7 +96,24 @@ a:hover {
     width: 100%;
 }
 
+/* logo */
+
+.logo {
+    height: 100px; 
+    max-width: auto;
+    object-fit: contain;
+}
+
 @media (max-width: 991px) {
+    .logo {
+        height: 60px; /* Tamaño del logo en dispositivos móviles */
+        max-width: 120px;
+    }
+
+    .main-header .navbar {
+        padding: 8px 0; /* Reduce aún más en dispositivos pequeños */
+    }
+
     .main-header .navbar-collapse {
         border-bottom: 2px solid var(--dark-color);
         border-top: 2px solid var(--dark-color);
@@ -192,28 +209,29 @@ a:hover {
 }
 
 .bg-1 {
-    background-color: #9BD3D0;
+    background-color: #0d6efd; /* Color principal */
 }
 
 .bg-2 {
-    background-color: #FEC447;
+    background-color: #66a9ff; /* Azul más claro */
 }
 
 .bg-3 {
-    background-color: #FECCB5;
+    background-color: #80bbff; /* Azul más suave */
 }
 
 .bg-4 {
-    background-color: #9f92ff;
+    background-color: #99ccff; /* Un azul claro */
 }
 
 .bg-5 {
-    background-color: #ff92ef;
+    background-color: #b3d4ff; /* Azul pastel */
 }
 
 .bg-6 {
-    background-color: #92ff9f;
+    background-color: #cce5ff; /* Azul muy suave */
 }
+
 
 main {
     position: relative;
@@ -427,20 +445,57 @@ main {
     position: relative;
 }
 
+.section-about {
+    padding-top: 150px;
+    padding-bottom: 0;
+    position: relative;
+}
+
 .section-contact {
     padding: 100px 0;
     position: relative;
 }
 
+.custom-container {
+    margin: 0px !important;
+    padding-left: 0px;
+}
+
+.image {
+    padding-left: 100px;
+}
+
+.full-width-background {
+    width: 100vw;
+    color: #fff; 
+    padding: 60px 0; 
+}
+
+.full-width-background .section-heading h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px; 
+}
+
+
 @media (max-width: 991px) {
     .section {
         padding: 80px 0;
+    }
+
+    .section-about {
+        padding-top: 80px;
     }
 }
 
 @media (max-width: 767px) {
     .section {
         padding: 60px 0;
+    }
+
+    .section-about {
+        padding-top: 60px;
     }
 }
 
@@ -486,6 +541,47 @@ main {
     font-size: 18px;
 }
 
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.timeline-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.timeline-content {
+    width: 45%;  /* Dos elementos por fila */
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid var(--dark-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.arrow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border: solid var(--dark-color);
+    border-width: 2px;
+    border-top: 0;
+    border-left: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
 .feature-box {
     padding: 40px;
     border: 2px solid var(--dark-color);
@@ -496,12 +592,6 @@ main {
 
 .feature-box:hover {
     box-shadow: 5px 5px 0 0 var(--dark-color);
-}
-
-@media (max-width: 767px) {
-    .feature-box {
-        padding: 30px;
-    }
 }
 
 .feature-box .icon {
@@ -529,45 +619,30 @@ main {
     margin-bottom: 10px;
 }
 
-@media (max-width: 767px) {
-    .feature-box h5 {
-        font-size: 22px;
-    }
-}
-
 .feature-box p {
     margin: 0;
     color: var(--dark-color);
     font-size: 17px;
 }
 
-.feature-box .img {
-    max-width: 100px;
-    height: 100px;
-    overflow: hidden;
-    margin: 0 auto;
-    border: 2px solid #373737;
+/* Responsive design */
+@media (max-width: 991px) {
+    .timeline-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .arrow {
+        display: none;
+    }
 }
 
-.feature-box-small {
-    padding: 15px;
-    align-items: center;
-}
 
-.feature-box-small:hover {
-    box-shadow: 3px 3px 0 0 var(--dark-color);
-}
-
-.feature-box-small .icon {
-    width: 50px;
-    height: 50px;
-}
-
-.feature-box-small h6 {
-    margin: 0;
-    color: var(--dark-color);
-    padding-left: 15px;
-}
 
 /*Portafolio*/
 
