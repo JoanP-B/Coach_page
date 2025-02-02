@@ -1,3 +1,39 @@
+// Actualización del JavaScript para el nuevo diseño
+document.addEventListener('DOMContentLoaded', function() {
+    // Animación para barras
+    const bars = document.querySelectorAll('.skill-bar');
+    const circles = document.querySelectorAll('.circle-progress');
+    
+    const animateElements = () => {
+        // Animar barras
+        bars.forEach(bar => {
+            const width = bar.dataset.width;
+            if(isElementInViewport(bar)) {
+                bar.style.width = width;
+            }
+        });
+        
+        // Animar círculos
+        circles.forEach(circle => {
+            const percent = circle.dataset.percent;
+            if(isElementInViewport(circle)) {
+                circle.style.setProperty('--percent', percent);
+            }
+        });
+    };
+
+    const isElementInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0
+        );
+    };
+
+    window.addEventListener('scroll', animateElements);
+    animateElements(); // Inicializar
+});
+
 //menu
 
 

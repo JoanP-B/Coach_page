@@ -329,7 +329,6 @@ main {
     }
 }
 */
-/*Animacion Opcional
 
 .anim-elements {
     position: absolute;
@@ -437,7 +436,7 @@ main {
         transform: translate(-1px,0) rotate(180deg);
     }
 }
-*/
+
 /*Sobre mi*/
 
 .section {
@@ -642,8 +641,53 @@ main {
     }
 }
 
+/*skills*
+/* Estilos para el diseño de porcentajes con círculos */
+.percentage-design {
+    padding: 20px;
+}
 
+.percentage-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
+.percentage-circle {
+    width: 80px; /* Tamaño del círculo */
+    height: 80px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace que sea un círculo */
+    background-color: #110dfd; /* Color de fondo del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.percentage-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff; /* Color del texto dentro del círculo */
+}
+
+.percentage-text {
+    font-size: 16px;
+    color: #333; /* Color del texto descriptivo */
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .percentage-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .percentage-circle {
+        margin-bottom: 10px;
+    }
+}
 /*Portafolio*/
 
 .portfolio-box .portfolio-img{
