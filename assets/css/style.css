@@ -199,11 +199,11 @@ a:hover {
 }
 
 /*Main*/
-
+/*
 .bg-gray {
     background-color: rgba(208, 205, 255, 0.389);
 }
-
+*/
 .bg-dark {
     background-color: var(--dark-color) !important;
 }
